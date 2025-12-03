@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOTOROMIS - Repuestos de Autos</title>
+  <link rel="stylesheet" href="motoromis.css" />
+  <script defer src="motoromis.js"></script>
+  <!-- 🔤 Fuente moderna desde Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+    <h1>MOTOROMIS</h1>
+     <!-- Botón hamburguesa (solo visible en móvil) -->
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+
+ <nav id="nav-links" class="nav-links">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <nav id="nav-links-movile" class="nav-links-movile show">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="carrito-icono" class="carrito-icono">
+      🛒 <span id="contador-carrito">0</span>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h2>Repuestos de calidad para tu vehículo</h2>
+    <p>Encuentra las mejores piezas con garantía y confianza.</p>
+    <button class="btn">Ver Productos</button>
+  </section>
+
+  <!-- 🔥 SECCIÓN DE MARCAS DE AUTOS -->
+<section class="marcas">
+  <h2>Marcas de los carros con los repuestos que trabajamos</h2>
+  <div class="logos-slider">
+    <div class="logos-track">
+      <img src="imagenes/marcas/pngwing.com.png" alt="Toyota">
+      <img src="imagenes/marcas/pngwing.com (1).png" alt="Chevrolet">
+      <img src="imagenes/marcas/pngwing.com (2).png" alt="Ford">
+      <img src="imagenes/marcas/pngwing.com (3).png" alt="Fiat">
+      <img src="imagenes/marcas/pngwing.com (4).png" alt="Mazda">
+      <img src="imagenes/marcas/pngwing.com (5).png" alt="Nissan">
+      <img src="imagenes/marcas/pnwwing.com(6).png" alt="Crysler">
+      <img src="imagenes/marcas/pngwing.com (7).png" alt="Renault">
+      <img src="imagenes/marcas/pngwing.com (8).png" alt="wolwagen">
+      
+      <img src="imagenes/marcas/pngwing.com (5).png" alt="Nissan">
+      <img src="imagenes/marcas/pngwing.com (3).png" alt="Fiat">
+      <img src="imagenes/marcas/pngwing.com (1).png" alt="Chevrolet">
+      <img src="imagenes/marcas/pngwing.com (8).png" alt="wolwagen">
+      <img src="imagenes/marcas/pnwwing.com(6).png" alt="Crysler">
+      <img src="imagenes/marcas/pngwing.com (4).png" alt="Mazda">
+      <img src="imagenes/marcas/pngwing.com (2).png" alt="Ford">
+      -- Puedes agregar más si lo deseas -->
+    </div>
+  </div>
+</section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestros Repuestos</h2>
+
+    <div class="slider-container">
+      <button class="prev" aria-label="anterior">&#10094;</button>
+    
+      <div class="slider" id="slider">
+        <div class="card">
+          <img src="imagenes/imagenesfiltro.jpg.jpg" alt="Filtro de aceite">
+          <h3>Filtro de Aceite</h3>
+          <p>Alta durabilidad y rendimiento superior.</p>
+          <span class="precio">$25.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/A0004203802.jpg" alt="Pastillas de freno">
+          <h3>Pastillas de Freno</h3>
+          <p>Mayor seguridad y resistencia térmica.</p>
+          <span class="precio">$45.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/amortiguadores.jpg" alt="Amortiguador">
+          <h3>Amortiguador</h3>
+          <p>Confort, estabilidad y durabilidad garantizada.</p>
+          <span class="precio">$85.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/Batería 12V.jpg" alt="Batería">
+          <h3>Batería 12V</h3>
+          <p>Potencia confiable para todo tipo de vehículo.</p>
+          <span class="precio">$120.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/varias-llantas.jpg" alt="Llanta">
+          <h3>Llanta</h3>
+          <p>Tracción, agarre y diseño de alto rendimiento.</p>
+          <span class="precio">$150.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    
+        <!-- ✅ NUEVOS PRODUCTOS (dentro del mismo carrusel) -->
+        <div class="card">
+          <img src="imagenes/png-transparent-headlamp-car-toyota-avalon-audi-s5-light-car-headlamp-car-mode-of-transport.png" alt="Faros LED">
+          <h3>Faros LED</h3>
+          <p>Iluminación potente, bajo consumo energético.</p>
+          <span class="precio">$95.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        
+        <div class="card">
+          <img src="imagenes/juego-de-empacadura-spark.jpg" alt="Empacaduras">
+          <h3>Empacaduras</h3>
+          <p>Sellado perfecto, resisten altas temperaturas.</p>
+          <span class="precio">$35.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        
+        <div class="card">
+          <img src="imagenes/radiador.jpg" alt="Radiador">
+          <h3>Radiador</h3>
+          <p>Máxima eficiencia en el enfriamiento del motor.</p>
+          <span class="precio">$180.00</span>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+      </div>
+    
+      <button class="next" aria-label="siguiente">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p class="correo"> correo: motoromis1@gmail.com </p>
+    <form class="form-email">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- popup carrito (se muestra/oculta via JS) -->
+  <div id="carrito-popup" class="carrito-popup" aria-hidden="true"></div>
+
+  <footer>
+    <p>&copy; 2025 MOTOROMIS - Todos los derechos reservados</p>
+  </footer>
+  
+</body>
+</html>
+
+
+
